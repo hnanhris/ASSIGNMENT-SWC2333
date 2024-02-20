@@ -39,11 +39,7 @@ public class FlowerShop
             "like to purchase? \nPetunia, Pansy, Rose," +
             " Violet, or Carnation?");
         }//end of for
-    
 
-        double total = count * price.length;
-        System.out.println("The cost for " + count  +  index  + " is " + total);
-        
         
         
     }//end of main 
