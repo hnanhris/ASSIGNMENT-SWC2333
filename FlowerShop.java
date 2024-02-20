@@ -16,7 +16,8 @@ public class FlowerShop
     public static void main(String[] args)
     {
         //Declaration of an array of size 10 named flowerArr
-        Flower[] flowerArr = new Flower[10];
+        String[] flowers = new String[10];
+        double[] price = {.50, .75, 1.50, .50, .80 , .45 , .67 , .8 , .34 , .12};
         
         //Declaration of all variables
         String name, colour, str; 
@@ -30,16 +31,20 @@ public class FlowerShop
             quantity = Integer.parseInt(str); //wrap from string to integer
             price = 
 
-            //Instantiate each element of the array
-            flowerArr[i] = new Flower();
-            
-            //call the mutator to change the object state
-            flowerArr[i].setFlower(name, colour, quantity, price); 
             
             //Call the toString method
             System.out.println(flowerArr[i].toString());  
+            
+            System.out.println("What kind of flower would you " +
+            "like to purchase? \nPetunia, Pansy, Rose," +
+            " Violet, or Carnation?");
         }//end of for
-        
     
+
+        double total = count * price.length;
+        System.out.println("The cost for " + count  +  index  + " is " + total);
+        
+        
+        
     }//end of main 
 }//end of class
